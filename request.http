@@ -1,0 +1,25 @@
+### json format request
+POST  http://127.0.0.1:5000/getAddressDetails HTTP/1.1
+content-type: application/json
+
+{
+	"address": "# 3582,13 G Main Road, 4th Cross Rd, Indiranagar,Bengaluru, Karnataka 560008",
+	"output_format": "json"
+}
+### xml format request
+POST  http://127.0.0.1:5000/getAddressDetails HTTP/1.1
+content-type: application/json
+
+{
+	"address": "# 3582,13 G Main Road, 4th Cross Rd, Indiranagar,Bengaluru, Karnataka 560008",
+	"output_format": "xml"
+}
+
+### Error validation request
+POST  http://127.0.0.1:5000/getAddressDetails HTTP/1.1
+content-type: application/json
+
+{
+	"address": "# 3582,13 G Main Road, 4th Cross Rd, Indiranagar,Bengaluru, Karnataka 560008",
+	"output_format": "xyz"
+}
