@@ -43,3 +43,9 @@ curl --request POST \
 make docker-build
 make docker-run
 ```
+
+###### Screenshots
+
+![Alt text](https://github.com/aakashjangidme/verloop-fde/blob/main/screenshots/json_response.png?raw=true "Json Response")
+![Alt text](https://github.com/aakashjangidme/verloop-fde/blob/main/screenshots/xml_response.png?raw=true "XML Response")
+![Alt text](https://github.com/aakashjangidme/verloop-fde/blob/main/screenshots/error_validation.png?raw=true "Error Validation")
