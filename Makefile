@@ -12,3 +12,16 @@ clean:
 create-env:
 	  test -d .venv || python3 -m venv .venv
 	. .venv/bin/activate; pip install -Ur requirements.txt
+	
+# docker specific commands
+docker-build:
+	@docker build -t verloop-fde .
+
+docker-run:
+	@docker run -d -p 5000:5000 --name verloop-fde verloop-fde
+
+docker-stop:
+	@docker container stop verloop-fde
+
+docker-clean:
+	@docker image rm -f verloop-fde

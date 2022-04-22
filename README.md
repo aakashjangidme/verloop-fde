@@ -34,3 +34,12 @@ curl --request POST \
   --header 'content-type: application/json' \
   --data '{"address": "#3582, 13 G Main Road, 4th Cross Rd, Indiranagar,Bengaluru,Karnataka 560008","output_format": "json"}'
 ```
+
+###### Building and running with Docker `without reverse-proxy impl`
+
+> Note: `API_KEY` is required in .env file.
+
+```bash
+make docker-build
+make docker-run
+```
